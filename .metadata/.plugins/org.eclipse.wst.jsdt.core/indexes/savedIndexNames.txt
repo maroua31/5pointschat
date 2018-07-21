@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+C:\Users\Maroua\Documents\eclipse-workspace\5Points\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3390161655.index
+3505339389.index
+2919517657.index
+1696961282.index
+2941339722.index

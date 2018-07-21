@@ -1,0 +1,13 @@
+package chat.repository;
+
+import org.springframework.data.repository.CrudRepository;
+
+import chat.model.User;
+
+public interface UserRepository extends CrudRepository<User, Integer> {
+
+	User findByLogin(String login);
+
+	User findByLoginAndPsw(String login, String psw);
+	
+}

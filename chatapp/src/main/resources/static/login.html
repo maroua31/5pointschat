@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html  ng-app="app">
+
+<head>
+
+<script type="text/javascript" src="lib/angular.min.js"></script>
+<script type="text/javascript" src="lib/angular-route.min.js"></script>
+<script type="text/javascript" src="js/angularcode.js"></script>
+<script src="lib/bootbox.js"></script>
+
+</head>
+<body>
+
+ <form method="post"  ng-controller="loginCtrl">
+      <div>
+        <input type="text"  placeholder="Login" ng-model="login" required>
+      </div>
+      <div>
+        <input type="password" class="form-control" placeholder="Mot de passe" ng-model="psw" required>
+      </div>
+   	 <div>
+          <button type="submit" ng-click="authentifier()">
+          </button>
+      </div> 
+</form>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

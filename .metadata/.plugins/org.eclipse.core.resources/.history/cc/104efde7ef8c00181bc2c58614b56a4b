@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html  ng-app="app">
+
+<head>
+
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/angular-route.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/bootbox.js"></script>
+</body>
+</html>

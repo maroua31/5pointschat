@@ -1,0 +1,29 @@
+var app = angular.module('app' , ['ngRoute']);
+  app.config(function ($routeProvider,$locationProvider) {
+	console.log("ctrl app");
+  
+  });
+  
+  
+  app.controller('loginCtrl', function($scope,$window, $http) {
+	 	console.log("ctrl login");
+	 	 $scope.authentifier = function() {
+				$http.get("/authentifier?login="+$scope.login+"&psw="+$scope.psw)
+				.success(function(data) {
+					if(data!="")
+					{	
+						localStorage.setItem("user",JSON.stringify( data));
+
+						var url = "http://" + $window.location.host + "/DACAJOB";
+				        $window.location.href = url;
+					}
+						else 
+						{ bootbox.alert("utilisateur not found"); }
+			    
+				})
+				.error(function(error)
+				{ bootbox.alert("utilisateur not found"); }		
+				)
+				;
+			}; 	
+	});
